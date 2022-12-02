@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
+
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -13,16 +14,18 @@
   }
 
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 
-  input:focus ~ label,
-  input:not(:placeholder-shown) ~ label {
-    @apply -translate-y-2 text-xsmall-regular; 
+  input:focus~label,
+  input:not(:placeholder-shown)~label {
+    @apply -translate-y-2 text-xsmall-regular;
   }
 
-  input:focus ~ label {
+  input:focus~label {
     @apply left-0;
   }
 
@@ -55,7 +58,7 @@
   }
 
   .contrast-btn {
-    @apply px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200 ease-in;
+    @apply px-4 py-2 border border-black rounded-full hover: bg-black hover:text-white transition-colors duration-200 ease-in;
   }
 
   .text-xsmall-regular {
@@ -108,5 +111,94 @@
 
   .text-3xl-semi {
     @apply text-[36px] leading-[48px] font-semibold;
+  }
+}
+
+
+/* common styles */
+
+.bg-green {
+  background-color: #d6efed !important;
+}
+
+.text-green {
+  font-weight: bold;
+  font-size: 30px;
+  color: #007372;
+}
+
+.btn-success {
+  background-color: #007372;
+  font-size: 16px !important;
+  text-align: center !important;
+  padding: 5px !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  border: none;
+  width: 115px;
+}
+
+.section-name {
+  line-height: 1.428;
+  letter-spacing: .5px;
+  padding: 20px 10px;
+  font-size: 32px;
+  color: #007372;
+  font-weight: 700;
+}
+
+/* TopMenu section */
+/* Packages section */
+/* Donate section */
+/* Campaigns section */
+.campaign-item {}
+
+/* media queries */
+
+/* real-time section  */
+.real-item {
+  width: 25vw;
+}
+.real-text h4,
+.real-text p {
+  color: #007372;
+  font-weight: 700;
+}
+/* media queries */
+@media screen and (max-width: 1100px) {
+  .real-item {
+    width: 75vw;
+  }
+  
+  .real-row{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* aseel section */
+
+/* media queries */
+
+/* mobilea-apps section */
+.text {
+  font-family: poppins, arial, tahoma;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* media queries */
+@media screen and (max-width: 639px) {
+  .container-paiding {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .custom-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 }
