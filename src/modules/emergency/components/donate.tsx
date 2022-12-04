@@ -18,7 +18,7 @@ function Donate() {
 
     const onChange = () => {
         const {amount , percent} = getValues()
-        const newTotal = +amount + (100* +percent ) / +amount
+        const newTotal = +amount + ( (+amount * +percent ) / 100) 
         setValue('total', newTotal.toString())
     }
 
