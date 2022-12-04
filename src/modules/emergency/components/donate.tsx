@@ -26,7 +26,7 @@ function Donate() {
         alert(JSON.stringify(data))
     })
 
-    return <>
+    return <div className="mt-28" id="emergency-products">
         <div className="container mx-auto bg-green donation-container my-16">
             <div className="py-10">
                 <h1 className="text-right section-name">
@@ -106,7 +106,7 @@ function Donate() {
                 <p className="text-justify">Some of the internal refugees or people in-need require things that can’t be added as packages. For example, we get requests for pots and pans, bags or transport charges to their cities. Use the donate and let ASEEL decide to that and we will decide and report back to you.</p>
             </div>
         </div>
-    </>
+    </div>
 }
 
 export default Donate

@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 function Packages() {
-    return <div>
+    return <div id="donate-let-aseel-decide">
         <div className="container mx-auto px-2">
             <h1 className="text-center section-name">Emergency Packages</h1>
             <div className="">
