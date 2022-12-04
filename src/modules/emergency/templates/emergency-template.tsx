@@ -11,7 +11,7 @@ import TopMenu from "../components/top-menu"
 const EmergencyTemplate = () => {
     return (
         <div className="flex-1 small:py-12 small:bg-gray-50">
-            {/* <TopMenu/> */}
+            <TopMenu/>
             <Packages/>
             <Donate/>
             <Campaigns/>

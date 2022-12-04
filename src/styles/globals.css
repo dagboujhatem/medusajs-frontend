@@ -148,6 +148,37 @@
 }
 
 /* TopMenu section */
+.header a {
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 10px;
+  color: #007372;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  /* cursor: grab; */
+}
+
+.header a:hover {
+  color: white;
+  background-color: #007372;
+}
+
+.play-store {
+  width: 100px;
+}
+
+.play-store>div {
+  position: unset !important;
+}
+
+.play-store .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: absolute !important;
+  height: unset !important;
+}
 
 /* media queries */
 
@@ -190,7 +221,7 @@
   /* .flex-item .img {
     width: 50vw;
   } */
-  
+
 }
 
 /* Donate section */
