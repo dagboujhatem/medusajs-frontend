@@ -318,7 +318,43 @@ textarea {
 
 /* Campaigns section */
 .campaign-item {
-  border: solid;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+  width: 320px;
+  margin-top: 10px;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.progress-green{
+  background-color: #007372;
+}
+
+.w-0 {
+  width: 0%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-12 {
+  width: 12%;
 }
 
 /* media queries */
