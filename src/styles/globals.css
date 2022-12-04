@@ -116,6 +116,11 @@
 
 
 /* common styles */
+@media (min-width: 1024px){
+  .content {
+    padding-top: 0 !important;
+  }
+}
 
 .bg-green {
   background-color: #d6efed !important;
@@ -148,6 +153,20 @@
 }
 
 /* TopMenu section */
+
+.header {
+  background: url("https://aseelapp.com/media/er/er-main-banner.jpg") no-repeat;
+  height: 575px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.h-575 {
+  height: 575px;
+}
+
 .header a {
   background-color: white;
   font-size: 16px;
@@ -157,7 +176,6 @@
   border-radius: 5px;
   border: none;
   margin-right: 10px;
-  /* cursor: grab; */
 }
 
 .header a:hover {
@@ -165,22 +183,19 @@
   background-color: #007372;
 }
 
-.play-store {
-  width: 100px;
-}
-
-.play-store>div {
-  position: unset !important;
-}
-
-.play-store .image {
-  object-fit: contain;
-  width: 100% !important;
-  position: absolute !important;
-  height: unset !important;
-}
-
 /* media queries */
+
+@media (max-width: 654px){
+  .header div{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .header div a {
+    margin-top: 15px;
+  }
+}
 
 /* Packages section */
 .flex-container {
