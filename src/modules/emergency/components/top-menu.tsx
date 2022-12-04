@@ -5,13 +5,13 @@ function TopMenu() {
     return (
         <div className="container mx-auto header">
             <div className="flex">
-                <Link href="/#donate-let-aseel-decide" scroll={false} passHref>
+                <Link href="/emergency#donate-let-aseel-decide" scroll={true} passHref>
                     Donate &amp; Let ASEEL Decide
                 </Link>
-                <Link className='btn-white' href="/#emergency-products" scroll={false} passHref>
+                <Link className='btn-white' href="/emergency#emergency-products" scroll={true} passHref>
                     Donate a package
                 </Link>
-                <Link className='btn-white' href="/#hashid" scroll={false} passHref>
+                <Link className='btn-white' href="/campaign/form" passHref>
                     Start a campaingn
                 </Link>
             </div>
