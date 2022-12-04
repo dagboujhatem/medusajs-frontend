@@ -1,10 +1,10 @@
 import Image from "next/image"
 
 function Packages() {
-    return <div id="donate-let-aseel-decide">
-        <div className="container mx-auto px-2">
-            <h1 className="text-center section-name">Emergency Packages</h1>
-            <div className="">
+    return <div className="mt-28" id="donate-let-aseel-decide">
+        <div className="container mx-auto px-2 my-8">
+            <h1 className="text-center section-name py-10">Emergency Packages</h1>
+            <div>
                 <div className="flex-container">
                     <div className="flex-item">
                         <Image className="lazyload border-radius-5 loaded" width='321' height='321' src="https://aseelapp.com/media/catalog/product/c/h/child_relief.jpg" data-src="https://aseelapp.com/media/catalog/product/c/h/child_relief.jpg" alt="image item" />
