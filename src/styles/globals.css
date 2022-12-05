@@ -215,6 +215,12 @@
   margin-top: 10px;
 }
 
+.flex-item .package-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
 .package-block p {
   color: #007372;
   line-height: 1.75;
@@ -233,9 +239,11 @@
     width: 100vw;
   }
 
-  /* .flex-item .img {
-    width: 50vw;
-  } */
+  .flex-item .package-image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
 
 }
 
