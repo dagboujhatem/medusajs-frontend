@@ -1,3 +1,4 @@
+import { useProductActions } from "@lib/context/product-context"
 import Image from "next/image"
 import { FieldValues, useForm } from "react-hook-form"
 
@@ -8,6 +9,7 @@ interface DonationData extends FieldValues {
 }
 
 function Donate() {
+    // const { updateOptions, addToCart, options, inStock, variant } = useProductActions();
     const {
         register,
         handleSubmit,
@@ -24,6 +26,8 @@ function Donate() {
 
     const onSubmit = handleSubmit(async (data) => {
         alert(JSON.stringify(data))
+        // Add to cart business logic  
+        // addToCart()
     })
 
     return <div className="mt-28" id="emergency-products">
